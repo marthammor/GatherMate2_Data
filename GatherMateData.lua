@@ -121,20 +121,38 @@ local bfaZones = {
 }
 
 local slZones = {
-	[1525] = true,
-	[1533] = true,
-	[1536] = true,
-	[1543] = true,
-	[1565] = true,
-	[1670] = true,
+	[1525] = true, -- Revendreth
+	[1533] = true, -- Bastion
+	[1536] = true, -- Maldraxxus
+	[1543] = true, -- The Maw
+	[1565] = true, -- Ardenweald
+	[1670] = true, -- Oribos
+	[1961] = true, -- Korthia
+	[1970] = true, -- Zereth Mortis
 }
 
 local dfZones = {
-	[2022] = true,
-	[2023] = true,
-	[2024] = true,
-	[2025] = true,
-	[2112] = true,
+	[2022] = true, -- The Waking Shores
+	[2023] = true, -- Ohn'ahran Plains
+	[2024] = true, -- The Azure Span
+	[2025] = true, -- Thaldraszus
+	[2112] = true, -- Valdrakken
+	[2151] = true, -- The Forbidden Reach
+	[2133] = true, -- Zaralek Cavern
+	[2200] = true, -- Emerald Dream
+	[2239] = true, -- Amirdrassil
+	[2262] = true, -- Traitor's Rest
+	[2199] = true, -- Tyrhold Reservoir
+	[2085] = true, -- The Primalist Future
+}
+
+local twwZones = {
+	[2248] = true, -- Isle of Dorn
+	[2215] = true, -- Hallowfall
+	[2214] = true, -- The Ringing Deeps
+	[2255] = true, -- Azj-Kahet
+	[2213] = true, -- City of Threads
+	[2339] = true, -- Dornogal
 }
 
 function GatherMateData:PerformMerge(dbs,style, zoneFilter)
@@ -158,6 +176,8 @@ function GatherMateData:PerformMerge(dbs,style, zoneFilter)
 			filter = slZones
 		elseif zoneFilter == "DF" then
 			filter = dfZones
+		elseif zoneFilter == "TWW" then
+			filter = twwZones
 		end
 	end
 	if dbs["Mines"]    then self:MergeMines(style ~= "Merge",filter) end
