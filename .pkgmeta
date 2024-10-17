@@ -1,1 +1,5 @@
 package-as: GatherMate2_Data
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
