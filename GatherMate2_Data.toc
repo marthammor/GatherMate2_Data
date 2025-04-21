@@ -1,7 +1,8 @@
-## Interface: 110002
+## Interface: 110105
 ## Notes: Wowhead Data dump for GatherMate2
 ## Title: GatherMate2Data
 ## Author: kagaro, Xinhuan
+## Category-enUS: Professions
 ## X-Category: Map
 ## X-Email: sal.scotto@gmail.com
 ## Version: @project-version@
