@@ -153,6 +153,8 @@ local twwZones = {
 	[2255] = true, -- Azj-Kahet
 	[2213] = true, -- City of Threads
 	[2339] = true, -- Dornogal
+	[2369] = true, -- Siren Isle
+	[2346] = true, -- Undermine
 }
 
 function GatherMateData:PerformMerge(dbs,style, zoneFilter)
