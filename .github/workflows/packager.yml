@@ -37,15 +37,15 @@ jobs:
 #          /home/runner/.luarocks/bin/luacheck . --no-color -q
 
       # once cloned, we just run the GitHub Action
-      - name: Package and release
-        uses: BigWigsMods/packager@v2
+#      - name: Package and release
+#        uses: BigWigsMods/packager@v2
 
-      - name: Package and release without uplading to Curse
+      - name: Package and release without uploading to Curse
         uses: BigWigsMods/packager@v2
         with:
           args: -p 0
 
-      - name: Package and release without uplading
-        uses: BigWigsMods/packager@v2
-        with:
-          args: -d
+#      - name: Package and release without uploading
+#        uses: BigWigsMods/packager@v2
+#        with:
+#          args: -d
