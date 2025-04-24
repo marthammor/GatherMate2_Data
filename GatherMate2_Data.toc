@@ -5,7 +5,7 @@
 ## Category-enUS: Professions
 ## X-Category: Map
 ## X-Email: sal.scotto@gmail.com
-## Version: @project-version@
+## Version: #@project-version@
 ## LoadOnDemand: 1
 ## Dependencies: GatherMate2
 ## X-Curse-Project-ID: 26737
