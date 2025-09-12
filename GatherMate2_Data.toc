@@ -4,11 +4,13 @@
 ## Author: kagaro, Xinhuan
 ## Category-enUS: Professions
 ## X-Category: Map
+## Group: GatherMate2
 ## X-Email: sal.scotto@gmail.com
 ## Version: @project-version@
 ## LoadOnDemand: 1
 ## Dependencies: GatherMate2
 ## X-Curse-Project-ID: 26737
+## IconTexture: Interface\AddOns\GatherMate2\Artwork\Icon.tga
 
 MiningData.lua
 HerbalismData.lua
