@@ -45,6 +45,7 @@ local cataZones = {
 	[194] = true,
 	[198] = true,
 	[201] = true,
+	[202] = true,
 	[204] = true,
 	[205] = true,
 	[207] = true,
@@ -55,7 +56,9 @@ local cataZones = {
 	[241] = true,
 	[244] = true,
 	[245] = true,
+	[249] = true,
 	[276] = true,
+	[1527] = true,
 }
 
 local mistsZones = {
@@ -67,11 +70,15 @@ local mistsZones = {
 	[390] = true,
 	[418] = true,
 	[422] = true,
+	[425] = true,
+	[427] = true,
 	[433] = true,
+	[465] = true,
 	[504] = true,
 	[507] = true,
 	[516] = true,
 	[554] = true,
+	[1530] = true,
 }
 
 local wodZones = {
@@ -101,6 +108,8 @@ local legionZones = {
 	[646] = true,
 	[650] = true,
 	[680] = true,
+	[747] = true,
+	[750] = true,
 	[790] = true,
 	[830] = true,
 	[882] = true,
@@ -121,6 +130,7 @@ local bfaZones = {
 }
 
 local slZones = {
+	[18] = true,   -- Tirisfal Glades
 	[1525] = true, -- Revendreth
 	[1533] = true, -- Bastion
 	[1536] = true, -- Maldraxxus
@@ -158,6 +168,19 @@ local twwZones = {
 	[2369] = true, -- Siren Isle
 	[2346] = true, -- Undermine
 	[2371] = true, -- K'aresh
+	[2477] = true, -- Voidscar Cavern
+	[2369] = true, -- Siren Isle
+}
+
+local mnZones ={
+	[2395] = true, -- Eversong Woods
+	[2413] = true, -- Harandar
+	[2424] = true, -- Isle of Quel'Danas
+	[2393] = true, -- Silvermoon City
+	[2405] = true, -- Voidstorm
+	[2444] = true, -- Masters' Perch (Slayer's Rise, WoWHead named it weirdly)
+	[2437] = true, -- Zul'Aman
+	[2536] = true, -- Atal'Aman
 }
 
 function GatherMateData:PerformMerge(dbs,style, zoneFilter)
@@ -183,6 +206,8 @@ function GatherMateData:PerformMerge(dbs,style, zoneFilter)
 			filter = dfZones
 		elseif zoneFilter == "TWW" then
 			filter = twwZones
+		elseif zoneFilter == "MN" then
+			filter = mnZones
 		end
 	end
 	if dbs["Mines"]    then self:MergeMines(style ~= "Merge",filter) end
