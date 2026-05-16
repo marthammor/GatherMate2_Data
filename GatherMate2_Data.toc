@@ -1,4 +1,4 @@
-## Interface: 110207,120000
+## Interface: 120001
 ## Notes: Wowhead Data dump for GatherMate2
 ## Title: GatherMate2Data
 ## Author: kagaro, Xinhuan
